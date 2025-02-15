@@ -1,0 +1,200 @@
+<!--para poner directo toda la estructura y elemento del HTML escribimos directo html:5 sin poner < como otros programas-->
+<!DOCTYPE html>
+<html lang="es"> <!--html:representa la raiz de mi documento, en la parte de lang cambiamos la parte del lenguaje para que reconozca otro idioma--> 
+<head> <!--html esta acompañado de un acompañamiento lang donde se cambia el idioma y es un atributo, el atributo es una identificación de elementos de manera detallada-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport:compatible a cualquier pantalla-->
+    <title>CURSO HTML5</title> <!--title:es el titulo de mi página web-->
+    <!--para dar mejor aspecto a nuestra pagina utilizamos css, nos vamos aca para enlazar un archivo html con otro arvicho css en base a la forma y colores, vamos a la parte de head-->
+    <link rel="stylesheet" href="css/estilos.css"> <!--ponemos primero el nombre de la carpeta y despues el nombre del archivo de css-->
+    <!--ponemos link:css para unirlo con html-->
+</head>
+<body>
+    <h1>titulo principal</h1> 
+    <h2>titulo uno</h2>
+    <h3>subtitulo uno</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo modi sed quis, ea accusantium placeat enim alias excepturi aliquam repellendus perferendis <strong>curso html</strong> impedit iusto delectus aliquid quasi sit maiores facere ducimus.
+        <!--enlace e imagenes-->
+        <!--vamos a poner la etiqueta a:se pone la dirreccion del objeto para visualizar-->
+        <br>
+        <!--<a href="index_2.html">mas informacion</a>-->
+        <a href="index_2.html" target="_blank">mas informacion</a>
+        <!--rel="noopener noreferrer" (no va ser necesario por el momento, en la etiqueta: href="http://"  borramos http:// en este caso solo en este caso y ponemos el nombre de la carpeta en su lugar ya que no ponemos otro link de otra pagina )-->
+    </p>
+    <!--strong: resalta la palabra importante, la resalta|-->
+    <h2>titulo dos</h2>
+    <h3>subtitulo uno</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo modi sed quis, ea accusantium placeat enim alias excepturi aliquam repellendus perferendis impedit iusto delectus aliquid quasi sit maiores facere ducimus.
+        <br>
+        <!--para colocar imagenes hacemos esto:--> 
+        <img src="img/Amity Blight 1.png" alt="" width="280">
+        <!--width="" height="": el ancho y altura de la imagen con esto mejoro su tamaño, como recomendacion podemos hacer solo el ancho y tener la dimension de la imagen-->
+    </p>
+    
+    <h3>subtitulo dos</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo modi sed quis, ea accusantium placeat enim alias excepturi aliquam repellendus perferendis impedit iusto delectus aliquid quasi sit maiores facere ducimus <br> curso html Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores quisquam odit perspiciatis, cum id neque, reprehenderit quis obcaecati quo quam culpa fugit. Deserunt laborum beatae veritatis enim consequuntur aperiam?</p>
+    <!--br: es salto de linea-->
+    <time>20:00</time>
+    <!--time: define el valor de la fecha y hora-->
+    <!--en este punto vamos a ver la otra imagen en la otra pestaña utilizando la etiqueta a:-->
+    <br>
+    <a href="img/Amity Blight.png" target="_blank">ver imagen</a>
+    <section>
+        <h2>futbol</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptates obcaecati dolorem adipisci perspiciatis nihil, id quae, numquam est eius quibusdam earum possimus sequi aspernatur commodi iste vero. Velit, quidem.</p>
+    </section>
+    <!--section: define una seccion de un documento, se presiona enter y ponenemos otros elementos, es un bloque independiente, es un tema en especifico-->
+    <article>
+        <h2>noticia de ultimo momento</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <cite>el presidente renuncia</cite> Sint placeat quisquam voluptas excepturi quibusdam libero consectetur neque? Culpa, inventore. Aut error quos hic vitae in quod officiis libero doloribus at.</p>
+    </article>
+    <!--article: es un contenido individual-->
+    <!--cite:representa el titulo de una obra,es como una etiqueta resaltante-->
+    <ul>
+        <!--li: define una lista enumerada-->
+        <li>dato uno</li>
+        <li>dato dos</li>
+        <li>dato tres</li>
+        <li>dato cuatro</li>
+        <li>dato cinco</li>
+    </ul>
+    <!--Listas(ul):listas son articulos sin orden-->
+    <ol>
+        <!--ol:es una lista ordenada-->
+        <li>dato uno</li>
+        <li>dato dos</li>
+        <li>dato tres</li>
+        <li>dato cuatro</li>
+        <li>dato cinco</li>
+    </ol>
+    <!--TABLAS(table):SON LOS DATOS CON MAS DE UNA DIMENSIÓN-->
+    <table>
+        <!--thead:bloque de filas que describen las etiquetas de columna-->
+        <thead>
+            <!--tr:fila de celdas en una tabla-->
+            <!--th:celda encabezado de una tabla-->
+            <tr>
+                <th>nombre</th>
+                <th>ciudad</th>
+                <th>edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--td:celda de dato en una tabla-->
+                <td> victor</td>
+                <td> la paz</td>
+                <td> 15 años</td>
+            </tr>
+            <tr>
+                <!--td:celda de dato en una tabla-->
+                <td> benjamin</td>
+                <td> la paz</td>
+                <td> 25 años</td>
+            </tr>
+            <tr>
+                <!--td:celda de dato en una tabla-->
+                <td> mario</td>
+                <td> la paz</td>
+                <td> 35 años</td>
+            </tr>
+            <tr>
+                <!--td:celda de dato en una tabla-->
+                <td> lucia</td>
+                <td> la paz</td>
+                <td> 33 años</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!--FORMULARIOS-->
+    <!--FORM:formulario-->
+    <form action="archivo.php">
+        <!--label:titulo de un control de un formulario-->
+        <!--<label for="nombre">NOMBRE</label>-->
+        <!--input:campo de datos(editor de datos)-->
+        <!--<input type="text" name="nombre">-->
+        <!--div:contenedor generico-->
+        <div>
+            <label for="nombre">NOMBRE</label>
+            <input type="text" name="nombre">
+        </div>
+        <br>
+        <div>
+            <label for="apellido">APELLIDO</label>
+            <input type="text" name="apellido" placeholder ="primer apellido" id="apellido"> 
+            <!--id:relaciona la información con la base de datos y se funciona con otros lenguaje de programación-->
+            <!--si queremos que ingrese un apellido solo un apellido o solo una palabara se pone placeholder es como una marca de agua-->
+        </div>
+        <br>
+        <div>
+            <label for="telefono">TELEFONO</label>
+            <input type="number" name="telefono" maxlength="8" id="telefono">
+            <!--maxlength:pongo el parametros o limite que debo ingresar-->
+            <!--input type="number" (solo me permite ingresar números)-->
+            <!--input type="text" (solo me permite ingresar letras)-->
+        </div>
+        <br>
+        <div>
+            <label for="contraseña">CONTRASEÑA</label>
+            <input type="password" name="contraseña" id="contraseña">
+            <!--password:para manejar las contraseñas-->
+        </div>
+        <br>
+        <div>
+            <label for="genero">GENERO</label>
+            <!--podemos poner un br para diferenciar hombre y mujer-->
+            <br>
+            <input type="radio"> hombre 
+            <input type="radio"> mujer
+            <!--radio:sirve para marcar opciones-->
+        </div>
+        <br>
+        <div>
+            <label for="mensaje">MENSAJE</label>
+            <!--para la seccion de mensaje no necesitamos input sino textarea-->
+            <textarea name="mensaje" id="mensaje" cols="40" rows="4"></textarea>
+            <!--cols y rows son para el tamaño de cuadro del mensaje y estos son el ancho y la altura-->
+        </div>
+        <br>
+        <div>
+            <label for="edad">EDAD</label>
+            <input type="text" name="edad" maxlength="2" id="edad" value="18">
+            <!--value: desde donde comenzar para poner el dato-->
+        </div>
+        <br>
+        <div>
+            <label for="fecha">FECHA DE NACIMIENTO</label>
+            <input type="date" name="" id="">
+            <!--date nos sirve para las fechas-->
+        </div>
+        <br>
+        <div>
+            <label for="selecmul">SELECCIONAR UNA MATERIA</label>
+            <!--select: es la seleccion entre un conjunto de opciones-->
+            <!--option: selecciona una opcion-->
+            <select name="selecmul">
+                <option value="calculo 1">CALCULO 1</option>
+                <option value="calculo 2">CALCULO 2</option>
+                <option value="calculo 3">CALCULO 3</option>
+                <option value="calculo 4">CALCULO 4</option>
+                <option value="sexo">SEXOLOGIA</option>
+            </select>
+            <!--el id en select no sera necesario para la seleccion multiple-->
+        </div>
+        <br>
+        <div>
+            <!--creacion de botones, el type se pone button para poner el boton-->
+            <input type="button" value="enviar"> <!--este boton no envia informacion-->
+            <!--para realizar un boton con una funcion hacemos esto para que se envie los datos:-->
+            <input type="submit" value="enviar">  <!--este boton envia informacion-->
+            <!--submit: sirve para enviar los datos-->
+            <input type="color">  <!--para poner color al boton-->
+        </div>
+    </form>
+    <br>
+
+    <footer>pagina creada por jhoan 2025</footer>
+    <!--footer:define el pie de pagina o sección-->
+</body>
+</html>
